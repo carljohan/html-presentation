@@ -186,7 +186,7 @@ layout: default
     <h2>Criteria</h2>
     <p>There are many different criteria to be 
       considered when choosing an Apple —
-       size, color, firmness, sweetness, tartness...</p>
+      size, color, firmness, sweetness, tartness...</p>
 </section>
 ```
 
@@ -196,23 +196,27 @@ layout: default
 
 # [The keyboard input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
 
+<div grid="~ cols-2 gap-8">
+<div>
 
 The `<kbd>` HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device.
 
-
-```html {all}
-<kbd>ctlr</kbd> + <kbd>u</kbd> to clear current terminal line
-<kbd>ctlr</kbd> + <kbd>l</kbd> to clear all terminal lines (same as `clear`) 
-```
-
 |     |     |
 | --- | --- |
-| <kbd>ctlr</kbd> + <kbd>u</kbd>| to clear current terminal line |
-| <kbd>ctlr</kbd> + <kbd>l</kbd>| to clear all terminal lines (same as `clear`)  |
+| <kbd>cmd</kbd> + <kbd>r</kbd>| to refresh |
 
 
----
+</div>
+<div class="flex flex-col gap-8">
 
+```html {all}
+<kbd>cmd</kbd> + <kbd>r</kbd>to refresh 
+
+```
+
+
+</div>
+</div>
 ---
 layout: center
 class: text-center
