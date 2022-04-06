@@ -24,3 +24,13 @@ a{
   opacity: 0.5;
 }
 
+ol{
+  list-style: auto;
+}
+
+.remember ul li::marker{
+
+content: '✅';
+/* font-size: 12px; */
+
+}
