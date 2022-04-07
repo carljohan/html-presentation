@@ -20,7 +20,7 @@ favicon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_a
 
 
 layout: intro-image
-image: 'assets/intro.jpg'
+image: /'assets/intro.jpg'
 ---
 
 <div class="">
