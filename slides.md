@@ -27,7 +27,7 @@ image: https://images.unsplash.com/photo-1643491066094-fb1d24571d93?ixlib=rb-1.2
 
 
 <div class="absolute bottom-10">
-  <h1>HTML 101</h1>
+  <h1>HTML potpurri</h1>
   <p>(or I should have learned this earlier)</p>
 </div>
 
@@ -252,7 +252,6 @@ Represents a generic standalone section of a document, which doesn't have a more
 
 <v-clicks>
 
-*  `<section>` should only be used if there isn't a more specific element to represent it
 *  Sections **should always have a heading** (`<h1>`-`<h6>` element), with very few exceptions.
 * If the contents represent useful tangential information that works alongside the main content, but is not directly part of it (like related links, or an author bio), use an `<aside>`.
 *	If you are only using the element as a styling wrapper, use a `<div>`. A rule of thumb is that a `<section>` should logically appear in the outline of a document.
@@ -291,17 +290,17 @@ A forum post, a magazine or newspaper article, or a blog entry, a product card, 
 
 ```html 
 <article class="forecast">
-    <h1>Weather forecast for Seattle</h1>
+    <h1>Weather forecast for Stockholm</h1>
     <article class="day-forecast">
-        <h2>03 March 2018</h2>
+        <h2>03 March 2022</h2>
         <p>Rain.</p>
     </article>
     <article class="day-forecast">
-        <h2>04 March 2018</h2>
+        <h2>04 March 2022</h2>
         <p>Periods of rain.</p>
     </article>
     <article class="day-forecast">
-        <h2>05 March 2018</h2>
+        <h2>05 March 2022</h2>
         <p>Heavy rain.</p>
     </article>
 </article>
@@ -352,7 +351,7 @@ Represents a footer for its nearest sectioning content or sectioning root el
         <li>Have I mentioned the beard?</li>
     </ol>
     <footer>
-        <p>© 2018 Gandalf</p>
+        <p>© 2022 Gandalf</p>
     </footer>
 </article>
 
@@ -401,7 +400,7 @@ layout: default
 
 # [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - common mistakes
 
-* The content inside a link should indicate where the link goes, even out of context.
+* The content inside a link should indicate where the link goes, even out of context. (Lighthouse usually warn about this).
 ```html {all|3|8}
 <!-- Inaccessible, weak link text -->
 <p>
@@ -423,7 +422,7 @@ layout: default
 # [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - tips
 
 
-* Size - A minimum size of `44×44` CSS pixels is recommended.
+* Size - A minimum size of `44×44` CSS pixels is recommended (also applies to buttons).
 
 ---
 layout: default
@@ -436,7 +435,7 @@ layout: default
 
 <v-clicks>
 
-* Useful to know when to use [different link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) (e.g. `noopener`, `noreferrer`, and `nofollow`) - future topic(?)
+* Useful to know when to use [different link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) (e.g. `noopener`, `noreferrer`, and `nofollow`) - future topic (?)
 
 </v-clicks>
 ---
