@@ -1,15 +1,16 @@
 
-h1{
-    @apply pb-4;
+.intro-image{
+  @apply relative z-1;
 }
-
+.intro-image:before{
+  content: '';
+  @apply absolute inset-0 -z-1;
+  background-color: rgba(0,0,0,0.4);
+}
 a{
     @apply !border-0 hover:underline;
 }
 
-.btn {
-  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full border-0;
-}
 
 .inset-center {
   position: absolute;
@@ -26,11 +27,4 @@ a{
 
 ol{
   list-style: auto;
-}
-
-.remember ul li::marker{
-
-content: '✅';
-/* font-size: 12px; */
-
 }

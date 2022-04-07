@@ -19,14 +19,21 @@ favicon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_a
 # Learn more: https://sli.dev/custom/fonts
 
 
-layout: intro
-image: 'https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80'
+layout: intro-image
+image: 'assets/intro.jpg'
 ---
 
+<div class="">
 
 
-  # HTML
-  ## (or How To Make Lasagna)
+<div class="absolute bottom-10">
+  <h1>HTML</h1>
+  <p>(or I was too lazy to learn this earlier)</p>
+</div>
+
+</div>
+
+ 
 
 
 
@@ -41,7 +48,7 @@ layout: section
 
 
   1. Content sectioning Do's & Dont's
-  2. Common a-tag mistakes
+  2. Common a-tag mistakes + tips
   3. `<img>` news
 
 
@@ -74,10 +81,13 @@ Introductory content, typically a group of introductory or navigational aids. It
 
 
 ## Takeaways 
+<v-clicks>
 
 * Not a sectioning content and therefore does not introduce a new section 
+
 * `<header>` element is intended to usually contain the surrounding section's heading (an h1–h6 element), but this is not required. 
 
+</v-clicks>
 </div>
 <div class="flex flex-col gap-8">
 
@@ -95,6 +105,12 @@ Introductory content, typically a group of introductory or navigational aids. It
 
 
 
+<div class="abs-br px-4">
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">
+MDN
+</a>
+</div> 
+
 
 ---
 layout: default
@@ -105,7 +121,9 @@ layout: default
 <div grid="~ cols-2 gap-8" class="">
 <div>
 
-The `<nav>` HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+A section of a page whose purpose is to provide navigation links, within the current document or to other documents.
+
+Examples of navigation sections are menus, tables of contents, and indexes.
 
 
 </div>
@@ -113,7 +131,7 @@ The `<nav>` HTML element represents a section of a page whose purpose is to prov
 
 
 ```html 
-<nav class="crumbs">
+<nav aria-labelledby="primary-navigation">
     <ul>
         <li><a href="/bikes">Bikes</a></li>
         <li><a href="/bmx">BMX</a></li>
@@ -126,8 +144,12 @@ The `<nav>` HTML element represents a section of a page whose purpose is to prov
 </div>
 
 ## Takeaways
+<v-clicks>
+
 * It's not necessary for all links to be contained in a `<nav>` element. `<nav>` is intended only for major block of navigation links; typically the `<footer>` element often has a list of links that don't need to be in a `<nav>` element.
 * A document may have several `<nav>` elements, for example, one for site navigation and one for intra-page navigation. aria-labelledby can be used in such case to promote accessibility, see example.
+
+</v-clicks>
 
 
 
@@ -151,14 +173,8 @@ layout: default
 <div>
 
 
-Represents the dominant content of the `<body>` of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+Represents the dominant content of the `<body>` of a document. Consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
 
-## Takeaways 
-
-* The content of a `<main>` element should be unique to the document 
-* Content that is repeated across a set of documents or document sections such as sidebars, navigation links, copyright information, site logos, and search forms shouldn't be included unless the search form is the main function of the page.
- Påverkar inte DOM-strukturen, utan endast informativ (T.ex. för screen-readers) 
-- Användbart vid “skipnav” funktion (exempel här https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main) (bättre exempel - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#skip_links) 
 
 </div>
 <div class="flex flex-col gap-8">
@@ -182,6 +198,16 @@ Represents the dominant content of the `<body>` of a document. The main conten
 </div>
 </div>
 
+## Takeaways 
+<v-clicks>
+
+* The content of a `<main>` element should be unique to the document 
+* Repeated content such as sidebars, navigation links, copyright information, site logos, and search forms shouldn't be included unless the search form is the main function of the page.
+* Useful for “skipnav” - [see example](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#skip_links)
+
+</v-clicks>
+
+
 <div class="abs-br px-4">
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">
 MDN
@@ -199,12 +225,6 @@ layout: default
 <div>
 
 Represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. 
-## Takeaways 
-
-*  `<section>` should only be used if there isn't a more specific element to represent it
-*  Sections **should always have a heading** (`<h1>`-`<h6>` element), with very few exceptions.
-* If the contents represent useful tangential information that works alongside the main content, but is not directly part of it (like related links, or an author bio), use an `<aside>`.
-*	If you are only using the element as a styling wrapper, use a `<div>`. A rule of thumb is that a `<section>` should logically appear in the outline of a document.
 
 </div>
 <div class="flex flex-col gap-8">
@@ -228,6 +248,18 @@ Represents a generic standalone section of a document, which doesn't have a more
 </div>
 </div>
 
+## Takeaways 
+
+<v-clicks>
+
+*  `<section>` should only be used if there isn't a more specific element to represent it
+*  Sections **should always have a heading** (`<h1>`-`<h6>` element), with very few exceptions.
+* If the contents represent useful tangential information that works alongside the main content, but is not directly part of it (like related links, or an author bio), use an `<aside>`.
+*	If you are only using the element as a styling wrapper, use a `<div>`. A rule of thumb is that a `<section>` should logically appear in the outline of a document.
+
+</v-clicks>
+
+
 <div class="abs-br px-4">
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">
 MDN
@@ -246,9 +278,12 @@ layout: default
 
 A forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
 ## Takeaways 
+<v-clicks>
+
 *	Each `<article>` should be identified, typically by including a heading  (`<h1>`-`<h6>` element) as a child of the `<article>` element.
 *	When an `<article>` element is nested, the inner element represents an article related to the outer element. For example, the comments of a blog post can be `<article>` elements nested in the `<article>` representing the blog post.
 
+</v-clicks>
 </div>
 <div class="flex flex-col gap-8">
 
@@ -292,12 +327,16 @@ layout: default
 <div>
 
 
-represents a footer for its nearest sectioning content or sectioning root element.
+Represents a footer for its nearest sectioning content or sectioning root element. (i.e can be used more than once per document)
 
 ## Takeaways 
+<v-clicks>
 
 * Enclose information about the author in an `<address>` element that can be included into the `<footer>` element.
 * The `<footer> `element is not sectioning content and therefore doesn't introduce a new section in the outline.
+
+</v-clicks>
+
 
 </div>
 <div class="flex flex-col gap-8">
@@ -330,13 +369,9 @@ WHATWG
 
 
 ---
-layout: bullets
+layout: section
 ---
-# Part 2 - Common a-tag mistakes
-
-  - Confused with onclick-event
-  - Bad indication where the link goes
-  - Size / margin
+# Part 2 - Common a-tag mistakes + tips
 
 
 
@@ -348,7 +383,7 @@ layout: default
 #  [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - common mistakes
 
 
-Combined with onclick-event - use `<button>` instead
+ - Combined with onclick-event - use `<button>` instead
 
 ```html {all|3}
 <div class="wrapper">
@@ -366,7 +401,7 @@ layout: default
 
 # [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - common mistakes
 
-The content inside a link should indicate where the link goes, even out of context.
+* The content inside a link should indicate where the link goes, even out of context.
 ```html {all|3|8}
 <!-- Inaccessible, weak link text -->
 <p>
@@ -385,10 +420,32 @@ The content inside a link should indicate where the link goes, even out of conte
 layout: default
 ---
 
-# [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - common mistakes
+# [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - tips
 
 
 * Size - A minimum size of `44×44` CSS pixels is recommended.
+
+---
+layout: default
+---
+
+# [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - tips
+
+
+* Setting `target="_blank"` on `<a>` elements implicitly provides the same rel behavior as setting `rel="noopener"` 
+
+<v-clicks>
+
+* Useful to know when to use [different link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types) (e.g. `noopener`, `noreferrer`, and `nofollow`) - future topic(?)
+
+</v-clicks>
+---
+layout: default
+---
+
+# [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) - tips
+
+
 * room between links - https://axesslab.com/hand-tremors/
 
  ![Touch targets](/assets/Touchtargets.png.webp)
@@ -401,10 +458,9 @@ url: https://www.youtube.com/embed/BE5WRtWPmAw
 ---
 
 ---
-layout: fact
+layout: section
 ---
-# `<img>` 
-news
+# `<img>` news
   
 
 ---
@@ -420,8 +476,13 @@ image: '/assets/loading-lazy.png'
 
 <div class="abs-br px-4">
 <a href="https://html.spec.whatwg.org/multipage/images.html">
-WHATWG
+WHATWG 
 </a>
+·
+<a href="https://caniuse.com/loading-lazy-attr">
+caniuse 
+</a>
+
 </div> 
 
 
@@ -433,4 +494,4 @@ class: text-center
 # Learn More
 
 [whatwg docs](https://html.spec.whatwg.org/multipage/) · 
-[mdm docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) · [link to slides](https://html-presentation-carljohan.vercel.app/)
+[mdm docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 
