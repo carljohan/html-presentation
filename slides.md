@@ -27,7 +27,7 @@ image: 'assets/intro.jpg'
 
 
 <div class="absolute bottom-10">
-  <h1>HTML</h1>
+  <h1>HTML 101</h1>
   <p>(or I should have learned this earlier)</p>
 </div>
 
