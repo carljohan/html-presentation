@@ -20,7 +20,7 @@ favicon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_a
 
 
 layout: intro-image
-image: '/assets/intro.jpg'
+image: https://images.unsplash.com/photo-1643491066094-fb1d24571d93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80
 ---
 
 <div class="">
@@ -465,7 +465,7 @@ layout: section
 
 ---
 layout: image-right
-image: '/assets/loading-lazy.png'
+image: https://media.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif
 ---
 #  [`<img>`](https://html.spec.whatwg.org/multipage/images.html)
 
