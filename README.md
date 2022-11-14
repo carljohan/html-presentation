@@ -1,6 +1,9 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# HTML Presentation
 
-To start the slide show:
+Intended to highlight common mistakes often seen in repositories.
+
+
+### Found mistakes or want to add slide?
 
 - `npm install`
 - `npm run dev`
@@ -8,4 +11,3 @@ To start the slide show:
 
 Edit the [slides.md](./slides.md) to see the changes.
 
-Learn more about Slidev on [documentations](https://sli.dev/).
